@@ -44,4 +44,8 @@ public class LoginPage extends BasePage {
     public String getErrorText() {
         return $(ERROR).shouldBe(visible).text();
     }
+
+    @Step("Получение текста ошибки")
+    public String getErrorText() {
+        return $(ERROR).shouldBe(visible).text();
 }
