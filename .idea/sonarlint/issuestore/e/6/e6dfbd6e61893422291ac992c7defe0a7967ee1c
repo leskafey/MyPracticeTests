@@ -1,12 +1,11 @@
 
-p
-java:S2699"-Add at least one assertion to this test case.(‰ä…8“àë›†2J$d1083049-c8fd-4818-a343-ca3e01802a87
-a
-java:S5786"Remove this 'public' modifier.(‰ä…8ÀØş…2J$15d9f35f-30fe-4a90-895d-46355da4fa99
+O
+java:S2699"-Add at least one assertion to this test case.(ÿ©Œ±úÿÿÿÿ8…åïÒ†2
 f
-java:S5786
-"Remove this 'public' modifier.(éÔñ˜ùÿÿÿÿ8ÀØş…2J$d6556d7e-f36f-4edf-98d9-2e65970cbc28
-ˆ
-java:S1854"@Remove this useless assignment to local variable "showcasePage".(ÂºÌÈùÿÿÿÿ8¬–×œ†2J$e5af89cd-4ce4-46fd-8c58-46cc35fbca6c
-y
-java:S1481"1Remove this unused "showcasePage" local variable.(ÂºÌÈùÿÿÿÿ8¬–×œ†2J$38c582c5-fa3d-43e6-8c1f-bef83229171d
+java:S5786"Remove this 'public' modifier.(ÿ©Œ±úÿÿÿÿ8ñ¹Ï†2J$54a7eec6-3f57-403e-ba34-86f8f769a9be
+f
+java:S5786"Remove this 'public' modifier.(éÔñ˜ùÿÿÿÿ8ñ¹Ï†2J$0a3571b8-af88-4861-af98-d7cbc4ed9d2c
+‚
+java:S1854"?Remove this useless assignment to local variable "itemWrapper".(ë™¤ 8Œ³´Ò†2J$76dfecb6-006f-4b39-b71e-998366a0dfb7
+s
+java:S1481"0Remove this unused "itemWrapper" local variable.(ë™¤ 8Œ³´Ò†2J$b9db1444-cdcf-4b46-9eb3-818fac3d0a02

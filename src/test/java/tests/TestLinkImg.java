@@ -4,6 +4,8 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import page.ItemPage;
+import page.ItemWrapper;
 import page.LoginPage;
 import page.ShowcasePage;
 
@@ -21,12 +23,14 @@ public class TestLinkImg {
 
     @Test
     public void testLinkImg() {
-        ShowcasePage showcasePage = new LoginPage()
+        ItemWrapper item = new LoginPage()
                 .fillUsername(LOGIN)
                 .fillPassword(PASSWORD)
                 .clickLogin()
-                .andSuccessLogin();
-        assertThat(showcasePage.imageLink()).as("Неправильная ссылка").contains(LINK);
+                .andSuccessLogin()
+                .getItemByName("Sauce Labs Bike Light");
+        String itemLink = item.getImageLink();
+        assertThat(itemLink).as("Неправильная ссылка").contains(LINK);
     }
 
 
