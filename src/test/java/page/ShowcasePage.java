@@ -22,7 +22,7 @@ public class ShowcasePage extends BasePage {
         $(TITLE).shouldBe(visible);
     }
 
-    @Step("Открытия страницы товара")
+    @Step("Открытие страницы товара")
     public ItemPage openItemPage() {
         $(ITEM).shouldBe(visible).click();
         return new ItemPage();
@@ -41,7 +41,7 @@ public class ShowcasePage extends BasePage {
     }
 
     @Step("Открытие корзины")
-    public static BucketPage openBucketPage() {
+    public BucketPage openBucketPage() {
         $(BTN_BUCKET).shouldBe(visible).click();
         return new BucketPage();
     }

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import page.ItemPage;
+import page.ItemWrapper;
 import page.LoginPage;
 import page.ShowcasePage;
 
@@ -23,12 +24,13 @@ public class TestItemPage {
 
     @Test
     public void testItemPage() {
-        ShowcasePage showcasePage = new LoginPage()
+        ItemWrapper item = new LoginPage()
                 .fillUsername(LOGIN)
                 .fillPassword(PASSWORD)
                 .clickLogin()
-                .andSuccessLogin();
-        ItemPage itemPage = showcasePage.openItemPage();
+                .andSuccessLogin()
+                .getItemByName("Sauce Labs Bike Light");
+        ItemPage itemPage = ShowcasePage.openItemPage();
         assertThat(itemPage.getDescription()).as("Неверное описание").contains(DESCRIPTION);
         assertThat(itemPage.getPrice()).as("Неверная цена").contains(PRICE);
     }
