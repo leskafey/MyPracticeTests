@@ -5,10 +5,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import page.LoginPage;
-import page.ShowcasePage
+import page.ShowcasePage;
 
 public class TestAddAndRemoveItems {
-    private static final String LOGIN = "problem_user";
+    private static final String LOGIN = "standard_user";
     private static final String PASSWORD = "secret_sauce";
 
     @BeforeEach
@@ -23,7 +23,8 @@ public class TestAddAndRemoveItems {
                 .fillPassword(PASSWORD)
                 .clickLogin()
                 .andSuccessLogin();
-
+        ShowcasePage.addToCart();
+        ShowcasePage.removeFromCart();
     }
 
     @AfterEach

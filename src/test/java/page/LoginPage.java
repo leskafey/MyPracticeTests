@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
 
     @Step("Проверка загрузки страницы логина")
     @Override
-    void verifyPage(){
+    void verifyPage() {
         $(HEADER).shouldBe(visible);
         $(USERNAME_INPUT).shouldBe(visible);
         $(PASSWORD_INPUT).shouldBe(visible);
@@ -45,7 +45,4 @@ public class LoginPage extends BasePage {
         return $(ERROR).shouldBe(visible).text();
     }
 
-    @Step("Получение текста ошибки")
-    public String getErrorText() {
-        return $(ERROR).shouldBe(visible).text();
 }
